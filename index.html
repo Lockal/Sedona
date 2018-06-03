@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+<div class="wrapper">
+   <header class="header">
+       <div class="header__element"><a href="#" class="header__element--link">ИНФОРМАЦИЯ</a></div>
+       <div class="header__element"><a href="#" class="header__element--link">ФОТО И ВИДЕО</a></div>
+       <div class="header__logo"><img src="img/logo.png"></div>
+       <div class="header__element"><a href="#" class="header__element--link">КАРТА ШТАТА</a></div>
+       <div class="header__element"><a href="#" class="header__element--link">ГОСТИНИЦЫ</a></div>
+   </header>
+   <div class="content">
+       <div class="content__begin-block">
+        <div class="content__begin-block--elements">
+           <div class="img"></div>
+           <div class="img"></div>
+           <div class="img"></div>
+           <div class="img"></div>
+           <div class="content__begin-block--text">
+               <p class="content__upper-text">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
+               <p class="content__lower-text">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+           </div>
+        </div>
+       </div>
+   </div>
+   <div class="main">
+       <div class="main__content">
+           <h2 class="main__content--title">НАСТОЯЩИЙ<br> ГОРОДОК</h2>
+           <p class="main__content--number">- №1 -</p>
+           <p class="main__content--description">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+       </div>
+       <div class="main__content"></div>
+       <div class="main__content">
+           <div class="main__content--icon-house"></div>
+           <h2 class="main__content--title-main">ЖИЛЬЕ</h2>
+           <p class="main__content--text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+        </div>
+       <div class="main__content">
+            <div class="main__content--icon-food"></div>
+            <h2 class="main__content--title-main">ЕДА</h2>
+            <p class="main__content--text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+       </div>
+       <div class="main__content">
+            <div class="main__content--icon-gift"></div>
+            <h2 class="main__content--title-main">СУВЕНИРЫ</h2>
+            <p class="main__content--text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+       </div>
+       <div class="main__content"></div>
+       <div class="main__content">
+            <h2 class="main__content--title">ТАМ ЕСТЬ<br> МОСТ ДЬЯВОЛА</h2>
+            <p class="main__content--number">- №2 -</p>
+            <p class="main__content--description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+       </div>
+       <div class="main__content">
+            <h2 class="main__content--title">НЕБОЛЬШАЯ<br> ПЛОЩАДЬ</h2>
+            <p class="main__content--number">- №3 -</p>
+            <p class="main__content--description">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+       </div>
+       <div class="main__content">
+            <h2 class="main__content--title">КРАСИВАЯ<br> ДОРОГА</h2>
+            <p class="main__content--number">- №4 -</p>
+            <p class="main__content--description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+       </div>
+       <div class="main__content">
+            <h2 class="main__content--title">МАЛО<br> ТУРИСТОВ</h2>
+            <p class="main__content--number">- №5 -</p>
+            <p class="main__content--description">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+       </div>
+   </div>
+   <div class="map-info">
+       <span class="map-info__upper-text">ЗАИНТЕРЕСОВАЛИСЬ?</span>
+       <span class="map-info__lower-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</span>
+       <div class="map-info__btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+        <div class="map-info__menu">
+            <div class="map-info__menu--indate">
+                <span class="indate">ДАТА ЗАЕЗДА:</span>
+                <input class="indate-input" type="text" value="24 апреля 2017">
+            </div>
+            <div class="map-info__menu--indate">
+                <span class="indate">ДАТА ВЫЕЗДА:</span>
+                <input class="indate-input" type="text" value="4 июля 2017">
+            </div>
+            <div class="map-info__menu--kids">
+                 <span class="indate-olds">ВЗРОСЛЫЕ:</span>
+                 <input type="number">
+                 <span class="indate-kids">ДЕТИ:</span>
+                 <input type="number">
+            </div>
+        <div class="map-info__button">НАЙТИ</div>
+        </div>
+       </div>  
+   </div>
+   <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+   <div style='overflow:hidden;height:473px;width:100%;'>
+    <div id='gmap_canvas' style='height:473px;width:100%;'></div>
+    <div><small><a href="embedgooglemaps.com/ru">https://embedgooglemaps.com/ru/</a>
+    </small></div><div><small><a href="http://mrpromokod.ru/">Mr Promokud</a></small></div>
+    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+</div><script type='text/javascript'>
+function init_map(){var myOptions = {
+    zoom:8,center:new google.maps.LatLng(34.8697395,-111.76098960000002),
+    mapTypeId: google.maps.MapTypeId.ROADMAP};
+    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+    marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(34.8697395,-111.76098960000002)});
+    infowindow = new google.maps.InfoWindow({content:'<strong>Название</strong><br>Седона<br>'});
+    google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+    infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+   <footer class="footer">
+       <div class="footer__info">#VISITSEDONA</div>
+       <div class="footer__social">
+           <a class="tw" href="#">tw</a>
+           <a class="fb" href="#">fb</a>
+           <a class="yt" href="#">yt</a>
+       </div>
+       <div class="footer__author">
+           <p class="footer__author--text">WEBSITE BY</p>
+           <div class="footer__author--logo"></div>
+       </div>
+   </footer>
+   <script src="main.js"></script>
+</div>
+</body>
+</html>
